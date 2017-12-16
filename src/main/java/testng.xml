@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="example suite 1" verbose="1" >
+  
+   <listeners>
+	 <listener class-name="com.scp.selenium.utilities.MyProjectReportGeneration"></listener>
+ </listeners>
+ 
+  <test name="sample" >
+    <classes>
+      <class name="com.scp.logintest.ReportingTest"/>
+      <class name="com.scp.logintest.InvoiceTest"/>
+    </classes>
+ </test>
+ 
+ <test name="xyz">
+ 	<classes>
+ 		<class name="com.scp.logintest.GeneralTest"/>
+ 		 <class name="com.scp.logintest.InvoiceTest"/>
+ 		 
+ 	</classes>
+ </test>
+</suite>
